@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS-Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/scroll_bar.css">
+    <link rel="stylesheet" href="css/essential.css">
+    <link rel="stylesheet" href="css/news_page.css">
+
+    <title>Durham News</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-durham">
+        <a class="navbar-brand logo-durham mx-auto">
+            <h1>Durham News</h1>
+            <a class="btn btn-more" onClick="redirect()">Add news</a>
+        </a>
+    </nav>
+
+    <div class="container" id="APIResponse">
+        <div class="preloader">
+            <div class="blob-1"></div>
+            <div class="blob-2"></div>
+        </div>
+    </div>
+
+    <footer>
+        Made by Mukhammed Murzin
+    </footer>
+    <script src="js/variables.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/news_page.js"></script>
+    <script>
+        function startPage() {
+            if (window.navigator.onLine) {
+                startTimer();
+            }
+        }
+
+        function redirect() {
+            window.location.href = 'add_news.html';
+        }
+
+        window.addEventListener('online', () => {
+            startPage();
+        });
+
+        window.addEventListener('offline', () => {
+            alert("No connection");
+        });
+
+        startPage();
+
+    </script>
+</body>
+
+</html>

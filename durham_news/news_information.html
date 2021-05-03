@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS-Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/scroll_bar.css">
+    <link rel="stylesheet" href="css/essential.css">
+    <link rel="stylesheet" href="css/news_information.css">
+    <link rel="stylesheet" href="css/comments_section.css">
+
+    <title>Durham News</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-durham">
+        
+        <div class="text-left">
+            <a class="btn btn-delete" onClick="history.back()">Back</a>
+        </div>
+
+        <a class="navbar-brand logo-durham mx-auto">
+            <h1>Durham News</h1>
+        </a>
+    </nav>
+
+    <div class="text-center">
+        <a class="btn btn-delete" onClick="deleteNews()">Delete news</a>
+    </div>
+
+    <div class="container text-center" id="newsTitle">
+
+    </div>
+
+    <div class="container description" id="newsShortDescription">
+
+    </div>
+
+    <div class="container news-text" id="newsContent">
+
+    </div>
+
+    <div class="container send-command-section">
+        <h3 class="comments-title"> Comments </h3>
+        <div class="form-group">
+            <label class="comment-area-label" for="comment">Enter your comment here:</label>
+            <textarea class="form-control" id="comment" rows="1" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="name"></label>
+            <input type="text" class="form-control" id="name" placeholder="What's your name" required>
+        </div>
+
+        <a class="btn btn-send-command" id="btnAddComment" onClick="addComment()">Send comment</a>
+
+    </div>
+
+    <div class="container comments-section" id="allComments">
+        
+    </div>
+
+    <footer>
+        Made by Mukhammed Murzin
+    </footer>
+    
+    <script src="js/variables.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/news_information.js"></script>
+
+    <script>
+        function startPage() {
+            if (window.navigator.onLine) {
+                fetchSingleNews();
+            }
+        }
+
+        window.addEventListener('online', () => {
+            startPage();
+        });
+
+        window.addEventListener('offline', () => {
+            alert("No connection");
+        });
+
+        startPage();
+
+    </script>
+    
+</body>
+
+</html>

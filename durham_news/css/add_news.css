@@ -1,0 +1,108 @@
+.create-news-section {
+    margin-bottom: 30px;
+}
+
+.comments-title {
+    color: black;
+    font-family: arcade-classic, Arial, sans-serif;
+    font-size: 60px;
+}
+
+.comment-area-label {
+    color: black;
+    font-family: josefin-sans, Arial, sans-serif;
+    font-size: 25px;
+}
+
+.form-create-news {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 25px;
+    font-family: josefin-sans, Arial, sans-serif;
+    line-height: 1.5;
+    color: black;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border-bottom: 1px solid #c1c1c1;
+    border-radius: 1px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-create-news:hover {
+    border-bottom: 2px solid black;
+    box-shadow: none;
+    outline: 0;
+}
+
+.form-create-news:focus {
+    color: black;
+    background-color: #fff;
+    border-bottom: 2px solid black;
+    box-shadow: none;
+    outline: 0;
+}
+
+@media screen and (min-width: 601px) {
+    #add-title {
+        font-family: arcade-classic, Arial, sans-serif;
+        word-spacing: 30px;
+        color: black;
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #add-title {
+        font-family: arcade-classic, Arial, sans-serif;
+        word-spacing: 30px;
+        color: black;
+        font-size: 60px;
+        -moz-text-align-last: center; /* Firefox 12+ */
+        text-align-last: center;
+    }
+}
+
+#add-description {
+     font-family: josefin-sans, Arial, sans-serif;
+     font-weight: bold;
+     color: black;
+     font-size: 30px;
+     margin-bottom: 50px;
+     margin-top: 20px;
+     text-align: justify;
+ }
+
+.btn-send-news {
+    margin-top: 30px;
+    margin-left: 15px;
+    color: white;
+    font-family: 'arcade-classic', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    border: 1px solid black;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.1s,
+    border 0.1s;
+    letter-spacing: 4px;
+}
+
+.btn-send-news:hover {
+    color: white;
+    background-color: #c1c1c1;
+    border-color: #c1c1c1;
+    cursor: pointer;
+}
+
+.btn-send-news:focus {
+    background-color: black;
+    border: 2px solid black;
+    outline: 0;
+    padding: 14px 28px;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+}

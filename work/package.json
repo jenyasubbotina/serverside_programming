@@ -1,0 +1,28 @@
+{
+  "name": "work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.25.0",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.7",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "*",
+    "mongodb": "*",
+    "mongoose": "*"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "latest"
+    }
+  }
+}

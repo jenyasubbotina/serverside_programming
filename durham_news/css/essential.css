@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "arcade-classic";
+    src: url("../fonts/Arcade_Classic/arcadeclassic.ttf");
+}
+
+@font-face {
+    font-family: "josefin-sans";
+    src: url("../fonts/Josefin_Sans/JosefinSans-Regular.ttf");
+}
+@font-face {
+    font-family: "josefin-sans";
+    src: url("../fonts/Josefin_Sans/JosefinSans-Bold.ttf");
+    font-weight: bold;
+}
+
+@-webkit-keyframes rainbow {
+    0%, 100% {
+        background-color: #ff2400;
+    }
+    11% {
+        background-color: #e81d1d;
+    }
+    22% {
+        background-color: #e8b71d;
+    }
+    33% {
+        background-color: #e3e81d;
+    }
+    44% {
+        background-color: #1de840;
+    }
+    55% {
+        background-color: #1ddde8;
+    }
+    66% {
+        background-color: #2b1de8;
+    }
+    77% {
+        background-color: #dd00f3;
+    }
+    88% {
+        background-color: #dd00f3;
+    }
+}
+
+@-webkit-keyframes rainbow-font {
+    0%, 100% {
+        color: #ff2400;
+    }
+    11% {
+        color: #e81d1d;
+    }
+    22% {
+        color: #e8b71d;
+    }
+    33% {
+        color: #e3e81d;
+    }
+    44% {
+        color: #1de840;
+    }
+    55% {
+        color: #1ddde8;
+    }
+    66% {
+        color: #2b1de8;
+    }
+    77% {
+        color: #dd00f3;
+    }
+    88% {
+        color: #dd00f3;
+    }
+}
+
+
+::-moz-selection {
+    color: white;
+    background: black;
+}
+
+::selection {
+    color: white;
+    background: black;
+}
+
+
+@media screen and (min-width: 601px) {
+    h1 {
+        font-size: 90px;
+        margin-bottom: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 60px;
+        margin-bottom: .3rem;
+    }
+}
+
+h3 {
+    font-size: 35px;
+}
+
+footer {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'arcade-classic', Arial, sans-serif;
+    text-align: center;
+    word-spacing: 5px;
+}
+
+footer:hover {
+    -webkit-animation: rainbow  9s ease-in-out infinite;
+    -z-animation: rainbow  9s ease-in-out infinite;
+    -o-animation: rainbow  9s ease-in-out infinite;
+    animation: rainbow 9s linear infinite;
+}
+
+.navbar-durham {
+    position: relative;
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+}
+
+.logo-durham {
+    font-family: 'arcade-classic', Arial, sans-serif;
+    background-color: white;
+    color: black;
+    word-spacing: 10px;
+    text-align: center;
+}
+
+.logo-durham:hover {
+    -webkit-animation: rainbow-font  3s ease-in-out infinite;
+    -z-animation: rainbow-font  3s ease-in-out infinite;
+    -o-animation: rainbow-font  3s ease-in-out infinite;
+    animation: rainbow-font 3s linear infinite;
+}

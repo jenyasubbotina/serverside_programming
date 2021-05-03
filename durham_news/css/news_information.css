@@ -1,0 +1,69 @@
+@media screen and (min-width: 601px) {
+    .news-title {
+        font-family: arcade-classic, Arial, sans-serif;
+        word-spacing: 30px;
+        color: black;
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .news-title {
+        font-family: arcade-classic, Arial, sans-serif;
+        word-spacing: 30px;
+        color: black;
+        font-size: 60px;
+    }
+}
+
+.description {
+    font-family: josefin-sans, Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 90px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.news-text {
+    font-family: josefin-sans, Arial, sans-serif;
+    color: black;
+    font-size: 30px;
+    text-align: justify;
+    margin-bottom: 70px;
+    word-wrap: break-word;
+}
+
+.btn-delete {
+    color: white;
+    font-family: 'arcade-classic', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    background-color: black;
+    border: 1px solid black;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.1s,
+        border 0.1s;
+    letter-spacing: 4px;
+}
+
+.btn-delete:hover {
+    color: white;
+    background-color: #c1c1c1;
+    border-color: #c1c1c1;
+    cursor: pointer;
+}
+
+.btn-delete:focus {
+    background-color: black;
+    border: 2px solid black;
+    outline: 0;
+    padding: 14px 28px;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+}

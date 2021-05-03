@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS-Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/scroll_bar.css">
+    <link rel="stylesheet" href="css/essential.css">
+    <link rel="stylesheet" href="css/news_information.css">
+    <link rel="stylesheet" href="css/comments_section.css">
+
+    <title>Durham News</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-durham">
+        <div class="text-left">
+            <a class="btn btn-delete" onClick="history.back()">Back</a>
+        </div>
+        <a class="navbar-brand logo-durham mx-auto" href="#">
+            <h1>Durham News</h1>
+        </a>
+    </nav>
+
+    <div class="container" id="commentSection">
+        <div class="comment">
+            <div class="comment-text-full" id="commentText">
+
+            </div>
+
+            <div class="comment-creation" id="commentCreation">
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="fixed-bottom">
+        Made by Mukhammed Murzin
+    </footer>
+
+    <script src="js/variables.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/comment_information.js"></script>
+    <script>
+
+        function startPage() {
+            if (window.navigator.onLine) {
+                fetchSingleComment();
+            }
+        }
+
+        window.addEventListener('online', () => {
+            startPage();
+        });
+
+        window.addEventListener('offline', () => {
+            alert("No connection");
+        });
+
+        startPage();
+
+    </script>
+</body>
+
+</html>
